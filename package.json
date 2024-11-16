@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node test/index.js"
   },
   "author": "@ropsoft",
   "license": "Apache-2.0",

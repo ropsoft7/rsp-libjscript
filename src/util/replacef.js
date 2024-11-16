@@ -1,10 +1,9 @@
 const fs = require('fs')
+const path = require('path')
 
 module.exports = function (caminhoArquivo, stringAntiga, stringNova) {
     
     try {
-
-        caminhoArquivo = path.join(__dirname, caminhoArquivo)
         
         let conteudo = fs.readFileSync(caminhoArquivo, 'utf8');
         let novoConteudo = conteudo.replace(stringAntiga, stringNova);

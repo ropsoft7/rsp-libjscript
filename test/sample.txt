@@ -1,0 +1,3 @@
+const sampleMinimalVersion = "7.7.0"
+
+console.log('sampleMinimalVersion', sampleMinimalVersion)
