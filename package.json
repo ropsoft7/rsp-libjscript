@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
-    "test": "node test/index.js"
+    "test": "node test/index.js",
+    "sync-inst": "git add .; git commit -m sync; git push origin; sudo npm install -g https://github.com/ropsoft7/rsp-libjscript"
   },
   "author": "@ropsoft",
   "license": "Apache-2.0",
