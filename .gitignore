@@ -1,0 +1,5 @@
+src/deps-generic
+node_modules
+application/**/.git
+package-lock.json
+nohup.txt
