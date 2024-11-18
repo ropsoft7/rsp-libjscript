@@ -1,5 +1,8 @@
-src/deps-generic
 node_modules
-application/**/.git
 package-lock.json
-nohup.txt
+node_modules
+node_modules/*
+node_modules/**/*
+nohup.out
+proj
+rsp-*
