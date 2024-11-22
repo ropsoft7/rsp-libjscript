@@ -8,5 +8,8 @@
   },
   "author": "@ropsoft",
   "license": "Apache-2.0",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "numeral": "^2.0.6"
+  }
 }
