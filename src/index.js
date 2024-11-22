@@ -1,4 +1,5 @@
 const exec = require('./exec.js');
+const print = require('./print.js');
 const util = require('./util/index.js');
 const envSet = require('./envSet.js');
 const envGet = require('./envGet.js');
@@ -8,10 +9,11 @@ function RSp() {
 };
 
 RSp.prototype.initialize = function () {
-    console.log('Initializing RSp Lib.js API instance...');
+    console.print('Initializing RSp Lib.js API instance...');
     this.env = {};
 };
 
+RSp.prototype.print = print;
 RSp.prototype.exec = exec;
 RSp.prototype.util = util;
 RSp.prototype.envSet = envSet;
