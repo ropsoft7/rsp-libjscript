@@ -11,5 +11,5 @@ module.exports = (message, options = {}) => {
   const { prefix, color, background, reset } = { ...defaultOptions, ...options };
 
   // Log formatado
-  console.log(`${color}${background}${prefix} ${message}${reset}`);
+  console.log(`\n${color}${background}${prefix} ${message}${reset}`);
 }
