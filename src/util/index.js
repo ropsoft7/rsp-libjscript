@@ -1,5 +1,5 @@
-const replacef = require('./replacef.js');
 
 module.exports = {
-    replacef: replacef
+    replacef: require('./replacef.js'),
+    runIndexScript: require('./runIndexScript.js')
 }
