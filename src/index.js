@@ -9,7 +9,7 @@ function RSp() {
 };
 
 RSp.prototype.initialize = function () {
-    console.print('Initializing RSp Lib.js API instance...');
+    console.log('Initializing RSp Lib.js API instance...');
     this.env = {};
 };
 
