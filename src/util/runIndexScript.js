@@ -11,6 +11,9 @@ module.exports = (scriptdir) => {
     fs.readdirSync(scriptdir).filter(file => {
         return numeral(file[0]).value() || numeral(file[0]).value() === 0;
     }).forEach(file => {
+
+        print(`Executing: ${scriptdir}/${file}`)
+        
         exec(`yes | ${scriptdir}/${file}`)
     })
 }
