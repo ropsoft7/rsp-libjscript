@@ -1,22 +1,23 @@
+const set = require('./set.js');
+const get = require('./get.js');
 const exec = require('./exec.js');
-const print = require('./print.js');
+const prin = require('./prin.js');
+const prompt = require('./prompt.js');
 const util = require('./util/index.js');
-const envSet = require('./envSet.js');
-const envGet = require('./envGet.js');
 
 function RSp() {
     this.initialize();
 };
 
 RSp.prototype.initialize = function () {
-    console.log('Initializing RSp Lib.js API instance...');
     this.env = {};
 };
 
-RSp.prototype.print = print;
+RSp.prototype.prompt = prompt;
+RSp.prototype.prin = prin;
 RSp.prototype.exec = exec;
 RSp.prototype.util = util;
-RSp.prototype.envSet = envSet;
-RSp.prototype.envGet = envGet;
+RSp.prototype.set = set;
+RSp.prototype.get = get;
 
 module.exports = RSp;

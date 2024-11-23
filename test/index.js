@@ -1,9 +1,8 @@
 const fs = require('fs');
-
 const exec = require('../src/exec.js');
 const util = require('../src/util/index.js');
-// const envSet = require('../src/envSet.js');
-// const envGet = require('../src/envGet.js');
+const prin = require('../src/prin.js');
+const prompt = require('../src/prompt.js');
 
 console.log('Running exec(echo "Hello World")')
 
@@ -28,3 +27,18 @@ console.log('Setting up back old value of sample.txt...');
 util.replacef(__dirname + `/sample.txt`, 'Version = "7.7.7"', 'Version = "7.7.0"');
 
 console.log('Back to original sample.txt content:  ', fs.readFileSync(__dirname + `/sample.txt`).toLocaleString());
+
+prompt(async ({ askSimple, askBoolean }) => {
+
+    const name = await askSimple('Qual é o seu nome?'),
+        age = await askSimple('Qual é a sua idade?', 'number'),
+        wannaGoDesktop = await askBoolean('Do you wish to start a desktop session?');
+
+        console.log(`Olá, ${name}! Você tem ${age} anos.`);
+    console.log('wannaGoDesktop', wannaGoDesktop)
+
+});
+
+prin("prin message")
+prin("prin error message", { type: "error" })
+prin("prin warning message", {type: "warning"})
