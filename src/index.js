@@ -1,3 +1,6 @@
+const fs = require('fs')
+const path = require('path')
+
 const set = require('./set.js');
 const get = require('./get.js');
 const exec = require('./exec.js');
@@ -10,7 +13,7 @@ function RSp() {
 };
 
 RSp.prototype.initialize = function () {
-    this.env = {};
+    
 };
 
 RSp.prototype.prompt = prompt;

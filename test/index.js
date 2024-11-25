@@ -1,5 +1,7 @@
 const fs = require('fs');
 const exec = require('../src/exec.js');
+const get = require('../src/get.js')
+const set = require('../src/set.js')
 const util = require('../src/util/index.js');
 const prin = require('../src/prin.js');
 const prompt = require('../src/prompt.js');
@@ -42,3 +44,6 @@ prompt(async ({ askSimple, askBoolean }) => {
 prin("prin message")
 prin("prin error message", { type: "error" })
 prin("prin warning message", {type: "warning"})
+
+
+prin(get('desktop', 'areWindowsHidden'))
