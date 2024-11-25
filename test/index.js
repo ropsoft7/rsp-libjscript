@@ -47,3 +47,7 @@ prin("prin warning message", {type: "warning"})
 
 
 prin(get('desktop', 'areWindowsHidden'))
+
+set('desktop', 'areWindowsHidden', true)
+
+prin(get('desktop', 'areWindowsHidden'))
