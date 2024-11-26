@@ -30,5 +30,7 @@ module.exports = (message, options = {}) => {
   };
 
   // Log formatado
-  console.log(`${color}${background}${prefix} ${message}${reset}`);
+  //console.log(`${color}${background}${prefix} ${message}${reset}`);
+  console.log(`${color}${prefix} ${message}${reset}`);
+
 }
