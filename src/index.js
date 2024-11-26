@@ -19,7 +19,7 @@ RSp.prototype.initialize = function () {
 
 RSp.prototype.prompt = prompt;
 RSp.prototype.prin = prin;
-RSp.prototype.prin = debug;
+RSp.prototype.debug = debug;
 RSp.prototype.exec = exec;
 RSp.prototype.util = util;
 RSp.prototype.set = set;
