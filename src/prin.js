@@ -28,5 +28,5 @@ module.exports = (message, options = {}) => {
   };
 
   // Log formatado
-  console.log(`${color}${prefix} ${message}${reset}`);
+  console.log(`${color}${prefix}${message}${reset}`);
 }
