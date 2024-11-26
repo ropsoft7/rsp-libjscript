@@ -4,6 +4,7 @@ const get = require('../src/get.js')
 const set = require('../src/set.js')
 const util = require('../src/util/index.js');
 const prin = require('../src/prin.js');
+const debug = require('../src/debug.js');
 const prompt = require('../src/prompt.js');
 
 console.log('Running exec(echo "Hello World")')
@@ -44,7 +45,7 @@ prompt(async ({ askSimple, askBoolean }) => {
 prin("prin message")
 prin("prin error message", { type: "error" })
 prin("prin warning message", {type: "warning"})
-
+debug({ thes: "message", iss: "a", plain: "object" })
 
 prin(get('desktop', 'areWindowsHidden'))
 

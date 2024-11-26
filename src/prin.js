@@ -12,23 +12,21 @@ module.exports = (message, options = {}) => {
     error: {
       prefix: '   → ERROR: ',
       color: '\x1b[31m', // Vermelho
-      background: '\x1b[41m' // Fundo vermelho
     },
     warning: {
       prefix: '   → WARNING: ',
       color: '\x1b[33m', // Amarelo
-      background: '\x1b[43m' // Fundo amarelo
     }
   };
 
   // Mesclar opções do usuário com as padrão
   const { type } = options;
-  const { prefix, color, background, reset } = {
+  const { prefix, color, reset } = {
     ...defaultOptions,
     ...(type && typeOptions[type] ? typeOptions[type] : {}),
     ...options
   };
 
   // Log formatado
-  console.log(`${color}${background}${prefix} ${message}${reset}`);
+  console.log(`${color}${prefix} ${message}${reset}`);
 }

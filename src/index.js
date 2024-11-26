@@ -5,6 +5,7 @@ const set = require('./set.js');
 const get = require('./get.js');
 const exec = require('./exec.js');
 const prin = require('./prin.js');
+const debug = require('./debug.js');
 const prompt = require('./prompt.js');
 const util = require('./util/index.js');
 
@@ -18,6 +19,7 @@ RSp.prototype.initialize = function () {
 
 RSp.prototype.prompt = prompt;
 RSp.prototype.prin = prin;
+RSp.prototype.prin = debug;
 RSp.prototype.exec = exec;
 RSp.prototype.util = util;
 RSp.prototype.set = set;
