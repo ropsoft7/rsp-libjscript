@@ -8,7 +8,7 @@ const path = require('path');
  * @param {string} searchTerm - The term to search for.
  * @param {string} replacement - The term to replace with.
  */
-function replaceRecursively(dir, searchTerm, replacement) {
+module.exports = function (dir, searchTerm, replacement) {
     const items = fs.readdirSync(dir);
 
     for (const item of items) {

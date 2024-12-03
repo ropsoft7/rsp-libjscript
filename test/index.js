@@ -55,8 +55,8 @@ prin(get('desktop', 'areWindowsHidden'))
 
 
 // Example usage:
-const directoryPath = './exampleDir'; // Replace with your starting directory
+const directoryPath = __dirname + '/exampleDir'; // Replace with your starting directory
 const searchTerm = 'oldTerm';
 const replacement = 'newTerm';
 
-replaceRecursively(directoryPath, searchTerm, replacement);
+util.rebrand(directoryPath, searchTerm, replacement);
